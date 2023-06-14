@@ -5,3 +5,5 @@ kafka-server-start.bat ../../config/server.properties
 kafka-topics.bat --create --topic LATEST --bootstrap-server localhost:9092
 
 kafka-console-producer.bat --topic LATEST --bootstrap-server localhost:9092
+
+kafka-console-consumer.bat --topic LATEST --from-beginning --bootstrap-server localhost:9092
